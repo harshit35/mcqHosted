@@ -1,0 +1,111 @@
+<html lang="en-US" style="height:100%">
+<head>
+    <meta charset="utf-8">
+    <title>Sample Quiz</title>
+    <script type="application/javascript">
+        function check() {
+            var q1=document.myform.q1.value;
+            var q2=document.myform.q2.value;
+            var q3=document.myform.q3.value;
+            var q4=document.myform.q4.value;
+            var q5=document.myform.q5.value;
+            var q6=document.myform.q6.value;
+            var q7=document.myform.q7.value;
+            var q8=document.myform.q8.value;
+            var q9=document.myform.q9.value;
+            var q10=document.myform.q10.value;
+            var score=0;
+            if(q1=="b") 
+                score++;
+            if(q2=="c") 
+                score++;
+            if(q3=="d") 
+                score++;
+            if(q4=="a") 
+                score++;
+            if(q5=="a") 
+                score++;
+            if(q6=="b") 
+                score++;
+            if(q7=="d") 
+                score++;
+            if(q8=="d") 
+                score++;
+            if(q9=="c") 
+                score++;
+            if(q10=="c") 
+                score++;
+            alert("Your score is "+score+"/10");
+        }
+    </script>
+</head>
+<body style="font-size:160%;">
+    <h1 align="center">Sample Quiz</h1>
+    
+    <form name="myform" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSdWkH-sTpnZQnpnRCJojVCa4VdWVq96gH9LibkDQD2pa8C3uA/formResponse" method="post">
+        <strong>How many bytes is 1 Gigabytes?</strong><br>
+        <input type="radio" name="q1" value="a">2<sup>20</sup><br>
+        <input type="radio" name="q1" value="b">2<sup>30</sup><br>
+        <input type="radio" name="q1" value="c">2<sup>10</sup><br>
+        <input type="radio" name="q1" value="d">None of these<br><br>
+    
+        <strong>How many bits is 1 Bytes?</strong><br>
+        <input type="radio" name="q2" value="a">16<br>
+        <input type="radio" name="q2" value="b">2<br>
+        <input type="radio" name="q2" value="c">8<br>
+        <input type="radio" name="q2" value="d">4<br><br>
+    
+        <strong>DRAM stands for</strong><br>
+        <input type="radio" name="q3" value="a">Dependable Random Access Memory<br>
+        <input type="radio" name="q3" value="b">Dependent Random Access Mechanism<br>
+        <input type="radio" name="q3" value="c">Dynamic Random Access Machine<br>
+        <input type="radio" name="q3" value="d">Dynamic Random Access Memory<br><br>
+    
+        <strong>USB stands for</strong><br>
+        <input type="radio" name="q4" value="a">Universal Serial Bus<br>
+        <input type="radio" name="q4" value="b">Universal Standard Bus<br>
+        <input type="radio" name="q4" value="c">Universal Serial Bit<br>
+        <input type="radio" name="q4" value="d">Untitled Standard Bus<br><br>
+    
+        <strong>Main memory of computer is</strong><br>
+        <input type="radio" name="q5" value="a">Internal<br>
+        <input type="radio" name="q5" value="b">External<br>
+        <input type="radio" name="q5" value="c">Auxiliary<br>
+        <input type="radio" name="q5" value="d">None of these<br><br>
+    
+        <strong>Permanent memory built into your computer called</strong><br>
+        <input type="radio" name="q6" value="a">RAM<br>
+        <input type="radio" name="q6" value="b">ROM<br>
+        <input type="radio" name="q6" value="c">CD-ROM<br>
+        <input type="radio" name="q6" value="d">Floppy Disk<br><br>
+    
+        <strong>Device used to back up the data are</strong><br>
+        <input type="radio" name="q7" value="a">Floppy disk<br>
+        <input type="radio" name="q7" value="b">Tape<br>
+        <input type="radio" name="q7" value="c">Network drive<br>
+        <input type="radio" name="q7" value="d">All of the above<br><br>
+    
+        <strong>EPROM stands for</strong><br>
+        <input type="radio" name="q8" value="a">Electronically Portable Read-Only Memory<br>
+        <input type="radio" name="q8" value="b">Electronically Programmable Read-Only Memory<br>
+        <input type="radio" name="q8" value="c">Erasable Portable Read-Only Memory<br>
+        <input type="radio" name="q8" value="d">Erasable Programmable Read-Only Memory<br><br>
+    
+        <strong>Which memory storage is widely used in PCs and Embedded Systems?</strong><br>
+        <input type="radio" name="q9" value="a">Flash memory<br>
+        <input type="radio" name="q9" value="b">EPROM<br>
+        <input type="radio" name="q9" value="c">DRAM<br>
+        <input type="radio" name="q9" value="d">SRAM<br><br>
+        
+        <strong>Word length of a personal computer is of</strong><br>
+        <input type="radio" name="q10" value="a">64 bits<br>
+        <input type="radio" name="q10" value="b">8 bits<br>
+        <input type="radio" name="q10" value="c">16 bits<br>
+        <input type="radio" name="q10" value="d">32 bits<br><br>
+    
+        <input type="button" style="font-size:105%" value="Submit" onclick="check()">
+    </form>
+    
+</form>    
+</body>
+</html>
